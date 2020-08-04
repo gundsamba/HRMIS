@@ -1,0 +1,900 @@
+﻿Алдаа : 3:31:56 PM Tuesday, April 21, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-06502: PL/SQL: numeric or value error: character to number conversion error
+ORA-06512: at line 1
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.SP_OracleExecuteNonQuery(String SPName, String[] Params1, String[] Params2) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 205
+--------------------------------------------------------------------------------
+Алдаа : 3:31:56 PM Tuesday, April 21, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-06502: PL/SQL: numeric or value error: character to number conversion error
+ORA-06512: at line 1
+  StackTrace:   at HRWebApp.cs.ModifyDB.SP_OracleExecuteNonQuery(String SPName, String[] Params1, String[] Params2) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 217
+   at HRWebApp.ws.BRANCH_REPLACE(String P_ID, String P_FATHER_ID, String P_INITNAME, String P_NAME, String P_INITNAME_ENG, String P_NAME_ENG, String P_BRANCH_TYPE_ID, String P_BRANCH_CHANGETYPE_ID, String P_DESCRIPTION, String P_SORT, String P_STAFFID, String P_DT) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 329
+--------------------------------------------------------------------------------
+Алдаа : 4:56:50 PM Tuesday, April 28, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."TELWORK": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 4:56:50 PM Tuesday, April 28, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."TELWORK": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.staffregTab1Datatable() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 365
+--------------------------------------------------------------------------------
+Алдаа : 4:56:50 PM Tuesday, April 28, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."TELWORK": invalid identifier
+  StackTrace:   at HRWebApp.cs.GetTableData.staffregTab1Datatable() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 408
+   at HRWebApp.ws.staffreg_staffregTab1Datatable() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 537
+--------------------------------------------------------------------------------
+Алдаа : 4:59:08 PM Tuesday, April 28, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."PUNISHNAME": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 4:59:08 PM Tuesday, April 28, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."PUNISHNAME": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 106
+--------------------------------------------------------------------------------
+Алдаа : 5:34:07 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:CommandText property has not been initialized.  StackTrace:   at System.Data.OracleClient.OracleCommand.get_StatementText()
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 5:34:07 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:CommandText property has not been initialized.  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 48
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 85
+--------------------------------------------------------------------------------
+Алдаа : 6:02:22 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 7:01:51 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 7:01:51 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 85
+--------------------------------------------------------------------------------
+Алдаа : 7:25:29 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 7:27:49 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 7:28:40 PM Wednesday, April 29, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 3:42:14 PM Thursday, April 30, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "QWE": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 3:42:14 PM Thursday, April 30, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "QWE": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 85
+--------------------------------------------------------------------------------
+Алдаа : 4:30:08 PM Thursday, April 30, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 12:14:59 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00942: table or view does not exist
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 12:15:21 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00942: table or view does not exist
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 12:25:02 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at System.Data.OracleClient.OracleDataReader.GetValue(Int32 i)
+   at System.Data.OracleClient.OracleDataReader.get_Item(Int32 i)
+   at HRWebApp.cs.GetTableData.profileTab1T7Datatable1(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 795
+--------------------------------------------------------------------------------
+Алдаа : 12:25:02 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at HRWebApp.cs.GetTableData.profileTab1T7Datatable1(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 818
+   at HRWebApp.ws.profile_profileTab1T7Datatable1(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 844
+--------------------------------------------------------------------------------
+Алдаа : 4:30:47 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00933: SQL command not properly ended
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 4:30:48 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00933: SQL command not properly ended
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 106
+--------------------------------------------------------------------------------
+Алдаа : 6:10:07 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : 8:05:40 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 8:05:40 PM Friday, May 01, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 85
+--------------------------------------------------------------------------------
+Алдаа : Session Died
+--------------------------------------------------------------------------------
+Алдаа : 2:53:04 PM Monday, May 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00907: missing right parenthesis
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 2:53:04 PM Monday, May 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00907: missing right parenthesis
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 106
+--------------------------------------------------------------------------------
+Алдаа : 6:34:16 PM Wednesday, May 06, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 6:34:16 PM Wednesday, May 06, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.profileforms.ptab2t7.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\profileforms\ptab2t7.aspx.cs:line 23
+--------------------------------------------------------------------------------
+Алдаа : 3:14:51 PM Thursday, May 07, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 3:14:52 PM Thursday, May 07, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 147
+--------------------------------------------------------------------------------
+Алдаа : 3:16:18 PM Thursday, May 07, 2015 - prj0005202 Г.Гүндсамба
+  Message:'HtmlTable' does not support the InnerHtml property.  StackTrace:   at System.Web.UI.HtmlControls.HtmlTable.set_InnerHtml(String value)
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 150
+--------------------------------------------------------------------------------
+Алдаа : 3:18:58 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:'HtmlSelect' does not support the InnerHtml property.  StackTrace:   at System.Web.UI.HtmlControls.HtmlSelect.get_InnerHtml()
+   at HRWebApp.pg.tomilolt.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\tomilolt.aspx.cs:line 38
+--------------------------------------------------------------------------------
+Алдаа : 9:06:01 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at System.Data.OracleClient.OracleDataReader.GetValue(Int32 i)
+   at System.Data.OracleClient.OracleDataReader.get_Item(Int32 i)
+   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1311
+--------------------------------------------------------------------------------
+Алдаа : 9:06:01 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1335
+   at HRWebApp.ws.tomilolt_tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1106
+--------------------------------------------------------------------------------
+Алдаа : 9:07:41 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODAT": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 9:07:41 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODAT": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1291
+--------------------------------------------------------------------------------
+Алдаа : 9:07:41 PM Wednesday, May 13, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODAT": invalid identifier
+  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1335
+   at HRWebApp.ws.tomilolt_tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1106
+--------------------------------------------------------------------------------
+Алдаа : 10:45:56 AM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01821: date format not recognized
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.get_HasRows()
+   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1292
+--------------------------------------------------------------------------------
+Алдаа : 10:45:57 AM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01821: date format not recognized
+  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1336
+   at HRWebApp.ws.tomilolt_tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1106
+--------------------------------------------------------------------------------
+Алдаа : 10:46:32 AM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01821: date format not recognized
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.get_HasRows()
+   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1292
+--------------------------------------------------------------------------------
+Алдаа : 10:46:32 AM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01821: date format not recognized
+  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1336
+   at HRWebApp.ws.tomilolt_tomiloltTab1Datatable(String type, String fromdate, String todate, String budget, String direction) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1106
+--------------------------------------------------------------------------------
+Алдаа : 2:40:59 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODATE": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 2:40:59 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODATE": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1369
+--------------------------------------------------------------------------------
+Алдаа : 2:40:59 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "B"."TODATE": invalid identifier
+  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1410
+   at HRWebApp.ws.tomilolt_tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1127
+--------------------------------------------------------------------------------
+Алдаа : 3:38:07 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 3:38:07 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00911: invalid character
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.pg.tomilolt.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\tomilolt.aspx.cs:line 26
+--------------------------------------------------------------------------------
+Алдаа : 3:44:28 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."REPORTDATE": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 3:44:28 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."REPORTDATE": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1370
+--------------------------------------------------------------------------------
+Алдаа : 3:44:28 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."REPORTDATE": invalid identifier
+  StackTrace:   at HRWebApp.cs.GetTableData.tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1412
+   at HRWebApp.ws.tomilolt_tomiloltTab2Datatable(String type, String fromdate, String todate, String budget, String direction, String isreport) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1127
+--------------------------------------------------------------------------------
+Алдаа : 4:22:36 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 4:22:36 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 106
+--------------------------------------------------------------------------------
+Алдаа : 6:16:24 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00979: not a GROUP BY expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 6:16:24 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00979: not a GROUP BY expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.setroleTab1Datatable(String pos, String gazar, String heltes, String tp, String role) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1533
+--------------------------------------------------------------------------------
+Алдаа : 6:16:24 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00979: not a GROUP BY expression
+  StackTrace:   at HRWebApp.cs.GetTableData.setroleTab1Datatable(String pos, String gazar, String heltes, String tp, String role) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1577
+   at HRWebApp.ws.setrole_setroleTab1Datatable(String pos, String gazar, String heltes, String tp, String role) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1339
+--------------------------------------------------------------------------------
+Алдаа : 6:44:07 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'STAFFS_ROLE'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.SP_OracleExecuteNonQuery(String SPName, String[] Params1, String[] Params2) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 205
+--------------------------------------------------------------------------------
+Алдаа : 6:44:07 PM Thursday, May 14, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'STAFFS_ROLE'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+  StackTrace:   at HRWebApp.cs.ModifyDB.SP_OracleExecuteNonQuery(String SPName, String[] Params1, String[] Params2) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 217
+   at HRWebApp.ws.STAFFS_ROLE(String P_STAFFS_ID, String P_ROLELIST) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1364
+--------------------------------------------------------------------------------
+Алдаа : 1:47:25 PM Friday, May 15, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "ST_STAFFS": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 2:06:22 PM Friday, May 15, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00918: column ambiguously defined
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 3:59:04 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 65
+--------------------------------------------------------------------------------
+Алдаа : 3:59:17 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:ORA-00920: invalid relational operator
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 3:59:17 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:ORA-00920: invalid relational operator
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.chuluutimeTab1Datatable(String currstaffid, String gazar, String heltes, String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1707
+--------------------------------------------------------------------------------
+Алдаа : 3:59:17 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:ORA-00920: invalid relational operator
+  StackTrace:   at HRWebApp.cs.GetTableData.chuluutimeTab1Datatable(String currstaffid, String gazar, String heltes, String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1758
+   at HRWebApp.ws.chuluutime_chuluutimeTab1Datatable(String currstaffid, String gazar, String heltes, String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1449
+--------------------------------------------------------------------------------
+Алдаа : 3:59:53 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:ORA-00920: invalid relational operator
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 4:00:28 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 65
+--------------------------------------------------------------------------------
+Алдаа : 4:02:07 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 65
+--------------------------------------------------------------------------------
+Алдаа : 4:02:41 PM Friday, May 15, 2015 - it0005211 И.Сэргэлэн
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.pg.dashboard.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboard.aspx.cs:line 65
+--------------------------------------------------------------------------------
+Алдаа : 4:16:23 PM Friday, May 15, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "UPDATE_DATE": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 4:16:23 PM Friday, May 15, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "UPDATE_DATE": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 87
+--------------------------------------------------------------------------------
+Алдаа : 11:21:50 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 11:21:50 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+Алдаа : 11:37:03 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 11:37:03 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+Алдаа : 11:37:51 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 11:37:51 AM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "F"."LNAME": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+Алдаа : 3:55:25 PM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01747: invalid user.table.column, table.column, or column specification
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 3:55:25 PM Tuesday, May 19, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01747: invalid user.table.column, table.column, or column specification
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 87
+--------------------------------------------------------------------------------
+Алдаа : 6:12:06 PM Thursday, May 21, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 6:12:06 PM Thursday, May 21, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+Алдаа : 11:51:47 AM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at System.Data.OracleClient.OracleDataReader.GetValue(Int32 i)
+   at System.Data.OracleClient.OracleDataReader.get_Item(Int32 i)
+   at HRWebApp.cs.GetTableData.celebdayTab1Datatable(String currstaffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1945
+--------------------------------------------------------------------------------
+Алдаа : 11:51:47 AM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:Index was outside the bounds of the array.  StackTrace:   at HRWebApp.cs.GetTableData.celebdayTab1Datatable(String currstaffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1970
+   at HRWebApp.ws.celebday_celebdayTab1Datatable(String currstaffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1515
+--------------------------------------------------------------------------------
+Алдаа : 12:14:11 PM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00933: SQL command not properly ended
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 12:14:11 PM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00933: SQL command not properly ended
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 87
+--------------------------------------------------------------------------------
+Алдаа : 2:13:34 PM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 2:13:34 PM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.cs.GetTableData.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 48
+--------------------------------------------------------------------------------
+Алдаа : 2:13:34 PM Friday, May 22, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.GetTableData.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 86
+   at HRWebApp.ws.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 178
+--------------------------------------------------------------------------------
+Алдаа : 5:05:19 PM Tuesday, May 26, 2015 - prj0005202 Г.Гүндсамба
+  Message:'HtmlTableRow' does not support the InnerHtml property.  StackTrace:   at System.Web.UI.HtmlControls.HtmlTableRow.set_InnerHtml(String value)
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 292
+--------------------------------------------------------------------------------
+Алдаа : 5:07:05 PM Tuesday, May 26, 2015 - prj0005202 Г.Гүндсамба
+  Message:'HtmlTableRow' does not support the InnerHtml property.  StackTrace:   at System.Web.UI.HtmlControls.HtmlTableRow.set_InnerHtml(String value)
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 292
+--------------------------------------------------------------------------------
+Алдаа : 5:14:54 PM Tuesday, May 26, 2015 - prj0005202 Г.Гүндсамба
+  Message:'HtmlTableRow' does not support the InnerHtml property.  StackTrace:   at System.Web.UI.HtmlControls.HtmlTableRow.set_InnerHtml(String value)
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 293
+--------------------------------------------------------------------------------
+Алдаа : 5:58:20 PM Wednesday, June 03, 2015 -  А.ЛУВСАНДАГВА
+  Message:ORA-00936: missing expression
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 5:58:20 PM Wednesday, June 03, 2015 -  А.ЛУВСАНДАГВА
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.cs.GetTableData.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 48
+--------------------------------------------------------------------------------
+Алдаа : 5:58:20 PM Wednesday, June 03, 2015 -  А.ЛУВСАНДАГВА
+  Message:ORA-00936: missing expression
+  StackTrace:   at HRWebApp.cs.GetTableData.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 86
+   at HRWebApp.ws.heltesListForDDL(String gazarId) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 178
+--------------------------------------------------------------------------------
+Алдаа : 12:17:38 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."SOFTWARE_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 12:17:38 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."SOFTWARE_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.cs.GetTableData.profileTab1T7Datatable3(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1092
+--------------------------------------------------------------------------------
+Алдаа : 12:17:38 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."SOFTWARE_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.GetTableData.profileTab1T7Datatable3(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\GetTableData.cs:line 1126
+   at HRWebApp.ws.profile_profileTab1T7Datatable3(String staffid) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 1016
+--------------------------------------------------------------------------------
+Алдаа : 12:18:21 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00984: column not allowed here
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 12:18:21 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00984: column not allowed here
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 87
+--------------------------------------------------------------------------------
+Алдаа : 5:42:02 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01843: not a valid month
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalarInternal(Boolean needCLStype, Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteScalar()
+   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 61
+--------------------------------------------------------------------------------
+Алдаа : 5:42:02 PM Thursday, June 04, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-01843: not a valid month
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteScalar(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 73
+   at HRWebApp.ws.WSOracleExecuteScalar(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+Алдаа : 10:06:14 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:06:14 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 149
+--------------------------------------------------------------------------------
+Алдаа : 10:07:04 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:07:04 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 149
+--------------------------------------------------------------------------------
+Алдаа : 10:07:49 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:07:49 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 149
+--------------------------------------------------------------------------------
+Алдаа : 10:09:13 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:09:13 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 149
+--------------------------------------------------------------------------------
+Алдаа : 10:09:52 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "A"."CITY_ID": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:11:41 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "COL": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 10:11:41 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "COL": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 107
+   at HRWebApp.pg.dashboardStaffAnketPrint.setDatas() in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\pg\dashboardStaffAnketPrint.aspx.cs:line 282
+--------------------------------------------------------------------------------
+Алдаа : 10:12:12 AM Friday, June 05, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "COL": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OracleClient.OracleCommand.ExecuteReader()
+   at HRWebApp.cs.ModifyDB.OracleExecuteReader(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 95
+--------------------------------------------------------------------------------
+Алдаа : 11:43:24 AM Thursday, June 25, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "TZ8": invalid identifier
+  StackTrace:   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   at System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 30
+--------------------------------------------------------------------------------
+Алдаа : 11:43:24 AM Thursday, June 25, 2015 - prj0005202 Г.Гүндсамба
+  Message:ORA-00904: "TZ8": invalid identifier
+  StackTrace:   at HRWebApp.cs.ModifyDB.OracleExecuteNonQuery(String strQry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\cs\ModifyDB.cs:line 42
+   at HRWebApp.ws.WSOracleExecuteNonQuery(String qry) in c:\Users\prj0005202\Documents\Visual Studio 2013\Projects\HRWebApp\HRWebApp\ws.aspx.cs:line 87
+--------------------------------------------------------------------------------
+  Message:Нэвтрэх нэр бүртгэлгүй эсвэл идэвхгүй байна. ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in D:\MofSystem\HRWebApp\HRWebApp\ws.aspx.cs:line 58
+--------------------------------------------------------------------------------
+  Message:Нэвтрэх нэр бүртгэлгүй эсвэл идэвхгүй байна. ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in D:\MofSystem\HRWebApp\HRWebApp\ws.aspx.cs:line 58
+--------------------------------------------------------------------------------
+  Message:ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+  StackTrace:   at System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in c:\Users\it0005224\Desktop\My Documents\Систем\HR&LM\HRWebApp\HRWebApp\ws.aspx.cs:line 51
+--------------------------------------------------------------------------------
+  Message:ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+  StackTrace:   at System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in c:\Users\it0005224\Desktop\My Documents\Систем\HR&LM\HRWebApp\HRWebApp\ws.aspx.cs:line 51
+--------------------------------------------------------------------------------
+  Message:Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.  StackTrace:   at System.Data.OracleClient.OCI.DetermineClientVersion()
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\Gundee\Documents\HRMIS\src\ws.aspx.cs:line 50
+--------------------------------------------------------------------------------
+  Message:Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.  StackTrace:   at System.Data.OracleClient.OCI.DetermineClientVersion()
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\Gundee\Documents\HRMIS\src\ws.aspx.cs:line 50
+--------------------------------------------------------------------------------
+  Message:The server is not operational.
+  StackTrace:   at System.DirectoryServices.DirectoryEntry.Bind(Boolean throwIfFail)
+   at System.DirectoryServices.DirectoryEntry.Bind()
+   at System.DirectoryServices.DirectoryEntry.get_AdsObject()
+   at System.DirectoryServices.PropertyCollection.get_Count()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\Gundee\Documents\HRMIS\src\ws.aspx.cs:line 48
+--------------------------------------------------------------------------------
+  Message:Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.  StackTrace:   at System.Data.OracleClient.OCI.DetermineClientVersion()
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 50
+--------------------------------------------------------------------------------
+  Message:Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.  StackTrace:   at System.Data.OracleClient.OCI.DetermineClientVersion()
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 50
+--------------------------------------------------------------------------------
+  Message:Нэвтрэх нэр бүртгэлгүй эсвэл идэвхгүй байна. ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 61
+--------------------------------------------------------------------------------
+  Message:ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+  StackTrace:   at System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 52
+--------------------------------------------------------------------------------
+  Message:ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+  StackTrace:   at System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   at System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   at System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OracleClient.OracleConnection.Open()
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 52
+--------------------------------------------------------------------------------
+  Message:Нэвтрэх нэр бүртгэлгүй эсвэл идэвхгүй байна. ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 98
+--------------------------------------------------------------------------------
+  Message:Нэвтрэх нэр бүртгэлгүй эсвэл идэвхгүй байна. ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 98
+--------------------------------------------------------------------------------
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+  Message:Input string was not in a correct format.  StackTrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 108
+--------------------------------------------------------------------------------
+  Message:Системийн эрх авна уу! ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 111
+--------------------------------------------------------------------------------
+  Message:Системийн эрх авна уу! ТЗУГ-д хандана уу!  StackTrace:   at HRWebApp.ws.CheckLogin(String username, String pass) in C:\Users\gunds\Desktop\GUNDSAMBA\PROJECTS\HRMIS\src\ws.aspx.cs:line 112
+--------------------------------------------------------------------------------
