@@ -48,7 +48,7 @@ namespace HRWebApp.cs
             catch (Exception e) {
                 string aa = e.Message;
                 string aaa = e.StackTrace.ToString();
-                myObj.OracleExecuteNonQuery("INSERT INTO ST_ERRORLOG (ID, STAFFS_ID, OCCURDATE, EX_MESSAGE, EX_STACKTRACE) VALUES (TBLLASTID('ST_ERRORLOG'), " + userData.USR_STAFFID + ", SYSDATE, '" + e.Message.ToString().Replace("'", "") + "', '" + e.StackTrace.ToString().Replace("'", "") + "')");
+                //myObj.OracleExecuteNonQuery("INSERT INTO ST_ERRORLOG (ID, STAFFS_ID, OCCURDATE, EX_MESSAGE, EX_STACKTRACE) VALUES (TBLLASTID('ST_ERRORLOG'), " + userData.USR_STAFFID + ", SYSDATE, '" + e.Message.ToString().Replace("'", "") + "', '" + e.StackTrace.ToString().Replace("'", "") + "')");
             }
         }
         public DataSet getUserInfo(string stid)

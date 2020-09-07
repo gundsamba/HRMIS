@@ -92,11 +92,11 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <label class="control-label">*Эхлэх огноо</label>
-                                    <input id="pTab1ModalInputBeginDt" name="pTab1ModalInputBeginDt" type="text" class="form-control" placeholder="Эхлэх огноо" />
+                                    <input id="pTab1ModalInputBeginDt" name="pTab1ModalInputBeginDt" type="text" class="form-control" placeholder="Эхлэх огноо" autocomplete="off" />
                                 </div>
                                 <div class="col-md-3">
                                     <label class="control-label">*Дуусах огноо</label>
-                                    <input id="pTab1ModalInputEndDt" name="pTab1ModalInputEndDt" type="text" class="form-control" placeholder="Дуусах огноо" />
+                                    <input id="pTab1ModalInputEndDt" name="pTab1ModalInputEndDt" type="text" class="form-control" placeholder="Дуусах огноо" autocomplete="off" />
                                 </div>
                                 <div class="col-md-3">
                                     <label class="control-label">Чөлөө авах өдөр</label>
@@ -463,6 +463,7 @@
                         format: 'YYYY-MM-DD',
                         message: 'Огноо буруу орсон байна. /Жил-Сар-Өдөр/'
                     }
+                    
                 }
             },
             pTab1ModalInputEndDt: {
@@ -474,6 +475,17 @@
                     date: {
                         format: 'YYYY-MM-DD',
                         message: 'Огноо буруу орсон байна. /Жил-Сар-Өдөр/'
+                    },
+                    callback: {
+                        message: 'Ажлын 1-2 хүртэл өдөр чөлөө авах боломжтой!',
+                        callback: function (value, validator, $field) {
+                            
+                                var dBeginDt = new Date(parseInt($.trim($('#pTab1ModalInputBeginDt').val()).split('-')[0]), parseInt($.trim($('#pTab1ModalInputBeginDt').val()).split('-')[1]) - 1, parseInt($.trim($('#pTab1ModalInputBeginDt').val()).split('-')[2]));
+                                var dEndDt = new Date(parseInt($.trim($('#pTab1ModalInputEndDt').val()).split('-')[0]), parseInt($.trim($('#pTab1ModalInputEndDt').val()).split('-')[1]) - 1, parseInt($.trim($('#pTab1ModalInputEndDt').val()).split('-')[2]));
+                                console.log(calcBusinessDays(dBeginDt, dEndDt));
+                                var bday = calcBusinessDays(dBeginDt, dEndDt);
+                                return bday <= 2 && bday > 0;
+                        }
                     }
                 }
             },
@@ -497,6 +509,7 @@
         },
         onSuccess: function (e, data) {
             e.preventDefault();
+
             var valIsSalary = '0';
             if ($('#pTab1ModalInputIssalary').is(':checked')) valIsSalary = '1';
             if ($('#pTab1ModalHeaderLabel').text() == 'нэмэх') {
@@ -504,9 +517,16 @@
                     type: "POST",
                     url: "ws.aspx/WSOracleExecuteNonQuery",
                     data: '{qry:"INSERT INTO ST_CHULUUDAYT2 (ID, STAFFS_ID, BEGINDT, ENDDT, CHULUUREASON_ID, ISSALARY, DESCRIPTION, REQUESTDATE) VALUES (TBLLASTID(\'ST_CHULUUDAYT2\'), ' + $.trim($('#indexUserId').text()) + ', \'' + $.trim($('#pTab1ModalInputBeginDt').val()) + '\', \'' + $.trim($('#pTab1ModalInputEndDt').val()) + '\', ' + $('#pTab1ModalSelectReason option:selected').val() + ', ' + valIsSalary + ', \'' + replaceDisplayToDatabase($.trim($('#pTab1ModalInputDescription').val())) + '\', sysdate)"}',
+                    //data: '{qry:"INSERT WHEN NOT EXISTS (SELECT ID FROM ST_CHULUUDAYT2 WHERE (to_char(TO_DATE (begindt,  \'yyyy-mm-dd \'), \'yyyy-mm \') = to_char(TO_DATE ( \'' + $.trim($('#pTab1ModalInputBeginDt').val()) + '\',  \'yyyy-mm-dd \'), \'yyyy-mm \') OR to_char(TO_DATE (enddt,  \'yyyy-mm-dd \'), \'yyyy-mm \') = to_char(TO_DATE ( \'' + $.trim($('#pTab1ModalInputBeginDt').val()) + '\',  \'yyyy-mm-dd \'), \'yyyy-mm \')) AND issalary = 1 AND staffs_id = ' + $.trim($('#indexUserId').text()) + ') THEN  INTO ST_CHULUUDAYT2 (ID, STAFFS_ID, BEGINDT, ENDDT, CHULUUREASON_ID, ISSALARY, DESCRIPTION, REQUESTDATE) VALUES (TBLLASTID(\'ST_CHULUUDAYT2\'), ' + $.trim($('#indexUserId').text()) + ', \'' + $.trim($('#pTab1ModalInputBeginDt').val()) + '\', \'' + $.trim($('#pTab1ModalInputEndDt').val()) + '\', ' + $('#pTab1ModalSelectReason option:selected').val() + ', ' + valIsSalary + ', \'' + replaceDisplayToDatabase($.trim($('#pTab1ModalInputDescription').val())) + '\', sysdate) ELSE INTO ST_CHULUUDAYT2 (ID) SELECT -1 FROM DUAL"}',
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    success: function () {
+                    success: function (data) {
+                        
+                        if (data.d){
+                            smallBox(data.d, 'Анхаар', '#a90329', 4000);
+                            return;
+                        }
+                        console.log(data);
                         dataBindTab1Datatable();
                         $('#pTab1Modal').modal('hide');
                         smallBox('2 хүртэл өдрийн чөлөө', 'Амжилттай хадгалагдлаа', '#659265', 4000);
@@ -517,7 +537,12 @@
                     error: function (xhr, status, error) {
                         var err = eval("(" + xhr.responseText + ")");
                         if (err.Message == 'SessionDied') window.location = '../login';
-                        else window.location = '../#pg/error500.aspx';
+                        else
+                        {
+                            console.log(xhr, status, error);
+                            alert(err.Message);
+                        }
+                            //window.location = '../#pg/error500.aspx';
                     }
                 });
             }
@@ -528,7 +553,12 @@
                     data: '{qry:"UPDATE ST_CHULUUDAYT2 SET STAFFS_ID=' + $.trim($('#indexUserId').text()) + ', BEGINDT=\'' + $.trim($('#pTab1ModalInputBeginDt').val()) + '\', ENDDT=\'' + $.trim($('#pTab1ModalInputEndDt').val()) + '\', CHULUUREASON_ID=' + $('#pTab1ModalSelectReason option:selected').val() + ', ISSALARY=' + valIsSalary + ', DESCRIPTION=\'' + replaceDisplayToDatabase($.trim($('#pTab1ModalInputDescription').val())) + '\', REQUESTDATE=sysdate WHERE ID=' + $('#pTab1ID').text() + '"}',
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    success: function () {
+                    success: function (data) {
+                        debugger;
+                        if (data.d) {
+                            smallBox(data.d, 'Анхаар', '#a90329', 4000);
+                            return;
+                        }
                         dataBindTab1Datatable();
                         $('#pTab1Modal').modal('hide');
                         smallBox('2 хүртэл өдрийн чөлөө', 'Амжилттай хадгалагдлаа', '#659265', 4000);

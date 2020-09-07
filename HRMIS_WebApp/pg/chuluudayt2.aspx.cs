@@ -57,7 +57,7 @@ namespace HRWebApp.pg
             }
             catch (cs.HRMISException ex)
             {
-                HttpContext.Current.Session["error500"] = "Message: " + ex.Message + "<br/>StackTrace: " + ex.StackTrace;
+                //HttpContext.Current.Session["error500"] = "Message: " + ex.Message + "<br/>StackTrace: " + ex.StackTrace;
                 //cs.WriteLogForEx.WriteLog(ex);
                 throw ex;
             }

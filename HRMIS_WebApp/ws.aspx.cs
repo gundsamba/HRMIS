@@ -186,7 +186,7 @@ namespace HRWebApp
             HttpContext.Current.Session["HRMIS_UserID"] = null;
         }
         [WebMethod]
-        public static void WSOracleExecuteNonQuery(string qry)
+        public static string WSOracleExecuteNonQuery(string qry)
         {
             ModifyDB myObj = new ModifyDB();
             try
@@ -200,12 +200,25 @@ namespace HRWebApp
                 //cs.WriteLogForEx.WriteLog(ex);
                 throw ex;
             }
-            catch (Exception ex)
+            catch (OracleException ex)
             {
+
+                if (ex.Code == 20000) {
+                    return ex.Message;
+                }
+
                 HttpContext.Current.Session["error500"] = "Message: " + ex.Message + "<br/>StackTrace: " + ex.StackTrace;
                 //cs.WriteLogForEx.WriteLog(ex);
                 throw ex;
             }
+            catch (Exception ex)
+            {
+                
+                HttpContext.Current.Session["error500"] = "Message: " + ex.Message + "<br/>StackTrace: " + ex.StackTrace;
+                //cs.WriteLogForEx.WriteLog(ex);
+                throw ex;
+            }
+            return "";
         }
         //[WebMethod]
         //public static void WSOracleExecuteNonQueryForClient(string qry)
